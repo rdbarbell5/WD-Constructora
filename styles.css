@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background:#D3AB80;
+    color:white;
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:#96786F;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(240, 239, 239, 0.7), rgba(38, 36, 36, 0.7)),
+    url('img/escalera.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#fdfdfd;
+    margin-bottom:20px;
+}
+
+/* BOTON */
+.btn{
+    background:#FFF4E2;
+    color:rgb(0, 0, 0);
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#7e7453;
+}
+
+/* SECCIONES */
+section{
+    padding:70px 20px;
+    text-align:center;
+}
+
+/* CARDS GENERALES */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#96786F;
+    padding:20px;
+    border-radius:12px;
+    width:260px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* 🖼️ GALERÍA DE IMÁGENES (LO IMPORTANTE) */
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+/* efecto zoom */
+.card:hover img{
+    transform:scale(1.05);
+}
+
+/* GRID MÁS PRO PARA TRABAJOS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+/* TEXTO DE IMAGEN */
+.card p{
+    margin-top:10px;
+    font-size:14px;
+    color:white;
+}
+
+/* SOBRE */
+.about{
+    background:#96786F;
+}
+
+/* BENEFICIOS */
+.benefit-list p{
+    margin:10px 0;
+}
+
+/* CTA */
+.cta{
+    background:#96786F;
+    padding: auto;
+}
+
+footer{
+    padding: auto;
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
